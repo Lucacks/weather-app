@@ -27,11 +27,13 @@
 </template>
 
 <script>
+  import API_KEY_DOCUMENT from '../apikeys.txt';
+  const API_KEY = API_KEY_DOCUMENT;
   export default {
     name: 'app',
     data () {
       return {
-        api_key: '9a238ec9dd64cc10be39e3402a4fd637',
+        api_key: API_KEY,
         url_base: 'https://api.openweathermap.org/data/2.5/',
         query: '',
         weather: {}
